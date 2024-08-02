@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Hackaton 4.0</title>
+    <meta
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+      name="viewport"
+    />
+    <link
+      rel="icon"
+      href="../assets/img/kaiadmin/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- Fonts and icons -->
+     
+    <script src="../assets/js/plugin/webfont/webfont.min.js"></script>
+    <script>
+      WebFont.load({
+        google: { families: ["Public Sans:300,400,500,600,700"] },
+        custom: {
+          families: [
+            "Font Awesome 5 Solid",
+            "Font Awesome 5 Regular",
+            "Font Awesome 5 Brands",
+            "simple-line-icons",
+          ],
+          urls: ["../assets/css/fonts.min.css"],
+        },
+        active: function () {
+          sessionStorage.fonts = true;
+        },
+      });
+    </script>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/plugins.min.css" />
+    <link rel="stylesheet" href="../assets/css/kaiadmin.min.css" />   
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <div class="sidebar" data-background-color="dark">
+        <div class="sidebar-logo">
+          <!-- Logo Header -->
+          <div class="logo-header" data-background-color="dark">
+            <a href="../index.html" class="logo">
+              <img
+                src="../assets/img/kaiadmin/logoP.svg"
+                alt="navbar brand"
+                class="navbar-brand"
+                height="20"
+              />
+            </a>
+            <div class="nav-toggle">
+              <button class="btn btn-toggle toggle-sidebar">
+                <i class="gg-menu-right"></i>
+              </button>
+              <button class="btn btn-toggle sidenav-toggler">
+                <i class="gg-menu-left"></i>
+              </button>
+            </div>
+            <button class="topbar-toggler more">
+              <i class="gg-more-vertical-alt"></i>
+            </button>
+          </div>
+          <!-- End Logo Header -->
+        </div>
+        <div class="sidebar-wrapper scrollbar scrollbar-inner">
+          <div class="sidebar-content">
+            <ul class="nav nav-secondary">           
+              <li class="nav-item active submenu">
+                <a data-bs-toggle="collapse" href="#tables">
+                  <i class="fas fa-table"></i>
+                  <p>Hackaton</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse show" id="tables">
+                  <ul class="nav nav-collapse">
+                    <li class="active">
+                      <a href="../index.html">
+                        <span class="sub-item">Clasificación</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../tables/datatables.html">
+                        <span class="sub-item">Finales</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>           
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Sidebar -->
+
+      <div class="main-panel">
+        <div class="main-header">
+          <div class="main-header-logo">  
+            <!-- Logo Header -->
+            <div class="logo-header" data-background-color="dark">
+              <a href="../index.html" class="logo">
+                <img
+                  src="../assets/img/kaiadmin/logo_light.svg"
+                  alt="navbar brand"
+                  class="navbar-brand"
+                  height="20"
+                />
+              </a>
+              <div class="nav-toggle">
+                <button class="btn btn-toggle toggle-sidebar">
+                  <i class="gg-menu-right"></i>
+                </button>
+                <button class="btn btn-toggle sidenav-toggler">
+                  <i class="gg-menu-left"></i>
+                </button>
+              </div>
+              <button class="topbar-toggler more">
+                <i class="gg-more-vertical-alt"></i>
+              </button>
+            </div>
+            <!-- End Logo Header -->
+          </div>
+          <!-- Navbar Header -->
+          
+          <!-- End Navbar -->
+        </div>
+
+        <div class="container">
+          <div class="page-inner">
+            <div class="page-header">
+              <h3 class="fw-bold mb-3">Hackaton </h3>
+              <ul class="breadcrumbs mb-3">
+                <li class="nav-home">
+                  <a href="#">
+                    <i class="icon-home"></i>
+                  </a>
+                </li>
+                <li class="separator">
+                  <i class="icon-arrow-right"></i>
+                </li>
+                <li class="nav-item">
+                  <a href="#">Clasificación/a>
+                </li>
+                <li class="separator">
+                  <i class="icon-arrow-right"></i>
+                </li>
+                <li class="nav-item">
+                  <a href="#">Finales</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="row">
+              <div class="row">
+                <div class="col">
+                    <img src="../assets/img/logo.jpeg" alt="HACKATON" class="img-fluid">
+                </div>
+                <div class="col">
+                  <img src="../assets/img/hack.png " alt="HACKATON" class="img-fluid">
+                </div>
+                
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="card-title d-flex justify-content-center " style="background-color: #a1103b; color: #f7f4f4;">Rúbrica de evaluación para el Hackatón PILARES 4.0 Finales</div>
+
+              </div>
+            </div><br><br>
+
+            <div class="row">
+              <div class="col">
+                <form id="my-google-sheet">
+                   <!--Nombre-->
+                   <label for="nombre_juez" >Nombre del Juez</label>
+                   <select id="miSelect" name="nombre_juez" class="btn">                 
+                   </select>
+               
+                   <label for="categoria">Categoría</label>
+                   <select id="categoria" name="categoria" class="btn ">                 
+                   </select>
+               
+                   <label for="equipo">Equipo</label>
+                   <select id="equipo" name="equipo" class="btn"></select><br><br>
+              </div>
+            </div>
+
+
+            <div class="container">
+            <div class="row">  
+              <div class="col-md-12 table-responsive" >                                 
+                              
+                    <table class="table table-hover table-condensed" >                 
+                      
+                      <thead >    
+           
+                       <tr >
+                           <th colspan="2"  style="background-color: #a1103b; color: #f7f4f4;" scope="col">Criterios de evaluación </th>
+                           
+                           <th rowspan="3" style="background-color: #a1103b; color: #f7f4f4;" scope="col">Descripción                                              
+                            </th>
+                           <th style="background-color: #a1103b; color: #f7f4f4;">Poco  <br>(1)</th>
+                           <th style="background-color: #a1103b; color: #f7f4f4;">Regular <br>(2)</th>
+                           <th style="background-color: #a1103b; color: #f7f4f4;">Bueno <br>(3)</th>
+                           <th style="background-color: #a1103b; color: #f7f4f4;">Muy Bueno <br>(4)</th>
+                           <th colspan="2" style="background-color: #a1103b; color: #f7f4f4;">Excelente <br>(5)</th>
+                       </tr>
+                   </thead>
+                   <tbody>
+                      <tr>                
+                        <td rowspan="4" style="background-color: #aa234b; color: #f7f4f4;">
+                          ¿El proyecto da solución a alguno de los retos planteados en el Hackatón PILARES 4.0?</td>               
+                      </tr>  
+                    
+                      <tr>
+                        <td>Evalúa que tanto han identificado y definido adecuadamente los objetivos del reto</td>
+                        <td colspan="5" style="text-align: center;"class="cp"> <select class="puntaje btn btn-outline-danger btn-lg" name="CA1">  </select></td>
+                      </tr>
+
+                      <tr>
+                        <td>Evalúa si la solución es innovadora y ofrece una perspectiva única para resolver el problema</td>
+                        <td colspan="5" style="text-align: center;"class="cp"> <select class="puntaje btn btn-outline-danger btn-lg" name="CA2">  </select></td>
+        
+                      </tr>
+          
+                      <tr>
+                          <td>Evalúa si la solución presentada aborda directamente el reto planteado</td>
+                          <td colspan="5" style="text-align: center;"class="cp"> <select class="puntaje btn btn-outline-danger btn-lg " name="CA3">  </select></td>
+          
+                      </tr>
+
+                       <!-- Segundo Bloque de Evaluación -->
+                    <tr>                
+                      <td rowspan="4" style="background-color: #aa234b; color: #f7f4f4;">Más allá de la tecnología y la innovación,
+                          ¿cómo crees que tu proyecto puede beneficiar a la comunidad o a sectores específicos de la sociedad?</td>               
+                  </tr>  
+                  
+                  <tr>
+                      <td>Evalúa qué aspectos sociales consideraron al desarrollar la solución</td>
+                      <td colspan="5" style="text-align: center;"class="cp"> <select class="puntaje btn btn-outline-danger btn-lg" name="CB1">  </select></td>
+
+                  </tr>
+
+                  <tr>
+                      <td>Evalúa si el equipo comprende 
+                          cómo su proyecto puede afectar positivamente a la comunidad o a sectores específicos de la sociedad.</td>
+                      <td colspan="5" style="text-align: center;"class="cp"> <select class="puntaje btn btn-outline-danger btn-lg" name="CB2">  </select></td>
+
+                  </tr>
+
+                  <tr>
+                      <td>Evalúa si el equipo 
+                          muestra un enfoque claro en el impacto social positivo de su proyecto más allá 
+                        de las consideraciones tecnológicas</td>
+                        <td colspan="5" style="text-align: center;"class="cp"> <select class="puntaje btn btn-outline-danger btn-lg" name="CB3">  </select></td>
+
+                  </tr>
+
+                  <!--TERCER Bloque de Evaluacion-->
+                  <tr>                
+                    <td rowspan="4" style="background-color: #aa234b; color: #f7f4f4;">Más allá de la tecnología y la innovación,
+                         ¿cómo crees que tu proyecto puede beneficiar a la comunidad o a sectores específicos de la sociedad?</td>               
+                </tr>  
+                
+                <tr>
+                    <td>Evalúa la identificación y resolución de problemas durante el desarrollo del proyecto</td>
+                    <td colspan="5" style="text-align: center;"class="cp"> <select class="puntaje btn btn-outline-danger btn-lg" name="CC1">  </select></td>
+                  </tr>
+    
+                <tr>
+                    <td>Evalúa las habilidades de comunicación y resolución de conflictos dentro del equipo</td>
+                    <td colspan="5" style="text-align: center;"class="cp"> <select class="puntaje btn btn-outline-danger btn-lg" name="CC2">  </select></td>
+                  </tr>
+    
+                <tr>
+                    <td>Evalúa cómo se comunican los miembros del equipo entre sí. ¿Hay una comunicación abierta 
+                        y clara durante la resolución de problemas y la toma de decisiones?</td>
+                        <td colspan="5" style="text-align: center;"class="cp"> <select class="puntaje btn btn-outline-danger btn-lg" name="CC3">  </select></td>
+                 </tr>
+                   </tbody>
+                    </table>    
+                  </form>
+                    <div class="form-group mb-5 text-center mt-5">
+                      <button onclick="SendFormGoogleSheets()" class="btn btn-danger btn-lg">Enviar Calificación</button>
+                    </div>              
+
+                  <!--fin experimento-->
+                </div>                
+                
+              </div>   
+              </div>           
+            </div>
+          </div>
+        </div>
+
+       
+      </div>
+
+      
+     
+      <!-- End Custom template -->
+    </div>
+  
+    <!--   Core JS Files   -->
+    <script src="../assets/js/core/jquery-3.7.1.min.js"></script>
+    <script src="../assets/js/core/popper.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
+
+    <!-- jQuery Scrollbar -->
+    <script src="../assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+    <!-- Kaiadmin JS -->
+    <script src="../assets/js/kaiadmin.min.js"></script>
+    <!-- Kaiadmin DEMO methods, don't include it in your project! -->
+    <script src="../assets/js/setting-demo2.js"></script>
+    <!--Cargando Datos-->
+    <script src="../assets/js/datos.js"></script>
+    <script>
+      $("#displayNotif").on("click", function () {
+        var placementFrom = $("#notify_placement_from option:selected").val();
+        var placementAlign = $("#notify_placement_align option:selected").val();
+        var state = $("#notify_state option:selected").val();
+        var style = $("#notify_style option:selected").val();
+        var content = {};
+
+        content.message =
+          'Turning standard Bootstrap alerts into "notify" like notifications';
+        content.title = "Bootstrap notify";
+        if (style == "withicon") {
+          content.icon = "fa fa-bell";
+        } else {
+          content.icon = "none";
+        }
+        content.url = "index.html";
+        content.target = "_blank";
+
+        $.notify(content, {
+          type: state,
+          placement: {
+            from: placementFrom,
+            align: placementAlign,
+          },
+          time: 1000,
+        });
+      });
+    </script>
+
+<script src="../assets/js/main.js"> </script>
+  </body>
+</html>

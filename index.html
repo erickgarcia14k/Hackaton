@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Hackaton 4.0</title>
+    <meta
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+      name="viewport"
+    />
+    <link
+      rel="icon"
+      href="assets/img/kaiadmin/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- Fonts and icons -->
+    <script src="assets/js/plugin/webfont/webfont.min.js"></script>
+    <script>
+      WebFont.load({
+        google: { families: ["Public Sans:300,400,500,600,700"] },
+        custom: {
+          families: [
+            "Font Awesome 5 Solid",
+            "Font Awesome 5 Regular",
+            "Font Awesome 5 Brands",
+            "simple-line-icons",
+          ],
+          urls: ["assets/css/fonts.min.css"],
+        },
+        active: function () {
+          sessionStorage.fonts = true;
+        },
+      });
+    </script>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins.min.css" />
+    <link rel="stylesheet" href="assets/css/kaiadmin.min.css" />
+
+  
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <div class="sidebar" data-background-color="dark">
+        <div class="sidebar-logo">
+          <!-- Logo Header -->
+          <div class="logo-header" data-background-color="dark">
+            <a href="../index.html" class="logo">
+              <img
+                src="assets/img/kaiadmin/logoP.svg"
+                alt="navbar brand"
+                class="navbar-brand"
+                height="20"
+              />
+            </a>
+            <div class="nav-toggle">
+              <button class="btn btn-toggle toggle-sidebar">
+                <i class="gg-menu-right"></i>
+              </button>
+              <button class="btn btn-toggle sidenav-toggler">
+                <i class="gg-menu-left"></i>
+              </button>
+            </div>
+            <button class="topbar-toggler more">
+              <i class="gg-more-vertical-alt"></i>
+            </button>
+          </div>
+          <!-- End Logo Header -->
+        </div>
+        <div class="sidebar-wrapper scrollbar scrollbar-inner">
+          <div class="sidebar-content">
+            <ul class="nav nav-secondary">           
+              <li class="nav-item active submenu">
+                <a data-bs-toggle="collapse" href="#tables">
+                  <i class="fas fa-table"></i>
+                  <p>Hackaton</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse show" id="tables">
+                  <ul class="nav nav-collapse">
+                    <li class="active">
+                      <a href="index.html">
+                        <span class="sub-item">Clasificación</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="tables/datatables.html">
+                        <span class="sub-item">Finales</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>           
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Sidebar -->
+
+      <div class="main-panel">
+        <div class="main-header">
+          <div class="main-header-logo">  
+            <!-- Logo Header -->
+            <div class="logo-header" data-background-color="dark">
+              <a href="../index.html" class="logo">
+              
+              </a>
+              <div class="nav-toggle">
+                <button class="btn btn-toggle toggle-sidebar">
+                  <i class="gg-menu-right"></i>
+                </button>
+                <button class="btn btn-toggle sidenav-toggler">
+                  <i class="gg-menu-left"></i>
+                </button>
+              </div>
+              <button class="topbar-toggler more">
+                <i class="gg-more-vertical-alt"></i>
+              </button>
+            </div>
+            <!-- End Logo Header -->
+          </div>
+          <!-- Navbar Header -->
+          
+          <!-- End Navbar -->
+        </div>
+
+        <div class="container">
+          <div class="page-inner">
+            <div class="page-header">
+              <h3 class="fw-bold mb-3">Hackaton </h3>
+              <ul class="breadcrumbs mb-3">
+                <li class="nav-home">
+                  <a href="#">
+                    <i class="icon-home"></i>
+                  </a>
+                </li>
+                <li class="separator">
+                  <i class="icon-arrow-right"></i>
+                </li>
+                <li class="nav-item">
+                  <a href="#">Clasificación/a>
+                </li>
+                <li class="separator">
+                  <i class="icon-arrow-right"></i>
+                </li>
+                <li class="nav-item">
+                  <a href="#">Finales</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="row">
+              <div class="row">
+                <div class="col">
+                    <img src="assets/img/logo.jpeg" alt="HACKATON" class="img-fluid">
+                </div>
+                <div class="col">
+                  <img src="assets/img/hack.png " alt="HACKATON" class="img-fluid">
+                </div>
+                
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="card-title d-flex justify-content-center " style="background-color: #a1103b; color: #f7f4f4;">Rúbrica de evaluación para el Hackatón PILARES 4.0 Clasificación</div>
+
+              </div>
+            </div><br><br>
+
+            <div class="row">
+              <div class="col">
+                <form id="my-google-sheet">
+                   <!--Nombre-->
+                   <label for="nombre_juez" >Nombre del Juez</label>
+                   <select id="miSelect" name="nombre_juez" class="btn">                 
+                   </select>
+               
+                   <label for="categoria">Categoría</label>
+                   <select id="categoria" name="categoria" class="btn ">                 
+                   </select>
+               
+                   <label for="equipo">Equipo</label>
+                   <select id="equipo" name="equipo" class="btn"></select><br><br>
+              </div>
+            </div>
+
+
+            <div class="container">
+            <div class="row">  
+              <div class="col-md-12 table-responsive" >                                 
+                              
+                    <table class="table table-hover table-condensed" >                 
+                      
+                      <thead >    
+           
+                       <tr >
+                           <th colspan="2"  style="background-color: #a1103b; color: #f7f4f4;" scope="col">Criterios de evaluación </th>
+                           
+                           <th rowspan="3" style="background-color: #a1103b; color: #f7f4f4;" scope="col">Descripción                                              
+                            </th>
+                           <th style="background-color: #a1103b; color: #f7f4f4;">Poco  <br>(1)</th>
+                           <th style="background-color: #a1103b; color: #f7f4f4;">Regular <br>(2)</th>
+                           <th style="background-color: #a1103b; color: #f7f4f4;">Bueno <br>(3)</th>
+                           <th style="background-color: #a1103b; color: #f7f4f4;">Muy Bueno <br>(4)</th>
+                           <th colspan="2" style="background-color: #a1103b; color: #f7f4f4;">Excelente <br>(5)</th>
+                       </tr>
+                   </thead>
+                   <tbody>
+                    <tr >
+                      <td rowspan="7" style="background-color: #a1103b; color: #f7f4f4;" >1. Pitch (Presentación)</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2">Claridad y Comunicación</th>
+                    <td scope="col">Evalúa qué tan clara fue la explicación del proyecto</th>
+                      <td colspan="5" style="text-align: center;"class="cp"> <select class="puntaje btn btn-outline-danger btn-lg" name="CA1">  </select></td>
+                    </tr>
+                  <tr>
+                    <td scope="col">Evalúa qué tan comprensibles fueron los objetivos y resultados esperados</td>
+                    <td colspan="5" style="text-align: center;"class="cp"> <select class="puntaje btn btn-outline-danger btn-lg" name="CA2">  </select></td>
+
+                  </tr>
+                  <tr>
+                      <td rowspan="2">Impacto</td>
+                      <td>Evalúa qué tanto transmitió la importancia y relevancia del proyecto</td>
+                      <td colspan="5" style="text-align: center;"class="cp"> <select class="puntaje btn btn-outline-danger btn-lg " name="CA3">  </select></td>
+
+                  </tr>
+                  <tr>
+                      <td>Evalúa qué tanto interés y entusiasmo generó en el público</td>
+                      <td colspan="5" style="text-align: center;"class="cp"> <select class="puntaje btn btn-outline-danger btn-lg " name="CA4">  </select></td>
+                    </tr>
+                  <tr>
+                      <td rowspan="2">Estructura y Cohesión</td>
+                      <td>Evalúa qué tanto siguió una estructura lógica y bien organizada</td>
+                      <td colspan="5" style="text-align: center;"class="cp"> <select class="puntaje btn btn-outline-danger btn-lg " name="CA5">  </select></td>
+
+                  </tr>
+                  <tr>
+                      <td>Evalúa qué tan conectadas estuvieron las partes del pitch</td>
+                      <td colspan="5" style="text-align: center;"class="cp"> <select class="puntaje btn btn-outline-danger btn-lg " name="CA6">  </select></td>
+                    </tr>
+                       <!-- fin del valor de tabla -->
+                       
+           
+                       <!-- segunda linea -->
+                       <tr>                
+                           <td rowspan="4" style="background-color: #a41c45; color: #f7f4f4;">2. Viabilidad</td>               
+                       </tr> 
+                       <tr>
+                           <td>Factibilidad Técnica</td>
+                           <td>Evalúa que tan técnicamente posible es implementar el proyecto con las tecnologías actuales</td>
+                           <td colspan="5" style="text-align: center;"class="cp"> <select class="puntaje btn btn-outline-danger btn-lg " name="CB1">  </select></td>
+                          </tr>
+           
+                       <!--  -->
+                       <tr>
+                           <td>Recursos Necesarios</td>
+                           <td>Evalúa que tan claro es el plan para escalar las soluciones y consideraciones económicas y de viabilidad financiera</td>
+                           <td colspan="5" style="text-align: center;"class="cp"> <select class="puntaje btn btn-outline-danger btn-lg " name="CB2">  </select></td>
+                          </tr>
+           
+                       <!--  -->
+                       <tr>
+                           <td>Planificación y Realización</td>
+                           <td>Evalúa que tan realista y detallada es la implementación del proyecto </td>
+                           <td colspan="5" style="text-align: center;"class="cp"> <select class="puntaje btn btn-outline-danger btn-lg " name="CB3">  </select></td>
+                          </tr>
+           
+                       <!-- tercer linea -->
+                       
+                       <tr>                
+                           <td rowspan="5" style="background-color: #aa234b; color: #f7f4f4;">3. Prototipo o maqueta</td>               
+                       </tr> 
+                       <tr>
+                           <td>Funcionalidad</td>
+                           <td>Evalúa que tanto cumple el proyecto las funcionalidades básicas prometidas</td>
+                           <td colspan="5" style="text-align: center;"class="cp"> <select class="puntaje btn btn-outline-danger btn-lg " name="CC1">  </select></td>
+                          </tr>
+           
+                       <!--  -->
+                       <tr>
+                           <td rowspan="2">Innovación</td>
+                           <td>Evalúa que tanto presentó, en general,  características innovadoras </td>
+                           <td colspan="5" style="text-align: center;"class="cp"> <select class="puntaje btn btn-outline-danger btn-lg " name="CC2">  </select></td>
+                          </tr>
+           
+                       <tr>
+                           <td>Evalúa que tanto utilizó tecnologías de manera creativa</td>
+                           <td colspan="5" style="text-align: center;"class="cp"> <select class="puntaje btn btn-outline-danger btn-lg " name="CC3">  </select></td>
+                          </tr>
+           
+                       <!--  -->
+                       <tr>
+                           <td>Usabilidad</td>
+                           <td>Evalúa que tan claro sería el uso y entendimiento por parte de los usuarios</td>
+                           <td colspan="5" style="text-align: center;"class="cp"> <select class="puntaje btn btn-outline-danger btn-lg " name="CC4">  </select></td>
+                          </tr>
+                       
+                       <!-- cuarta linea -->
+           
+                       <tr>                
+                           <td rowspan="6" style="background-color: #b52f57; color: #f7f4f4;">4. Core Values<br>(Valores Fundamentales)</td>               
+                       </tr> 
+                       <tr>
+                           <td rowspan="2">Compromiso Social</td>
+                           <td>Evalúa que tanto aborda problemáticas reales y relevantes para la comunidad</td>
+                           <td colspan="5" style="text-align: center;"class="cp"> <select class="puntaje btn btn-outline-danger btn-lg " name="CD1">  </select></td>
+                          </tr>
+                       <tr>
+                           <td>Evalúa que tanto impacto social positivo puede tener a largo plazo</td>
+                           <td colspan="5" style="text-align: center;"class="cp"> <select class="puntaje btn btn-outline-danger btn-lg " name="CD2">  </select></td>
+                          </tr>
+           
+                       <!--  -->
+                       <tr>
+                           <td>Compromiso Educativo</td>
+                           <td>Evalúa que tanta promocion de aprendizaje y educación tecnológica hubo entre los participantes</td>
+                           <td colspan="5" style="text-align: center;"class="cp"> <select class="puntaje btn btn-outline-danger btn-lg " name="CD3">  </select></td>
+                          </tr>
+           
+                       <!--  -->
+                       <tr>
+                           <td rowspan="2">Sostenibilidad</td>
+                           <td>Evalúa que tanto potencial tiene para ser sostenible a largo plazo</td>
+                           <td colspan="5" style="text-align: center;"class="cp"> <select class="puntaje btn btn-outline-danger btn-lg " name="CD4">  </select></td>
+                          </tr>
+                       <tr>
+                           <td>Evalúa que tanto se consideró el uso responsable de los recursos materiales</td>
+                           <td colspan="5" style="text-align: center;"class="cp"> <select class="puntaje btn btn-outline-danger btn-lg " name="CD5">  </select></td>
+
+                       </tr>
+           
+                   </tbody>
+                    </table>  
+                  </form>
+                  <div class="form-group mb-5 text-center mt-5">
+                    <button onclick="SendFormGoogleSheets()" class="btn btn-danger btn-lg">Enviar Calificación</button>
+                  </div>                  
+
+                  <!--fin experimento-->
+                </div>                
+                
+              </div>   
+              </div>           
+            </div>
+          </div>
+        </div>
+
+       
+      </div>
+
+      <!-- Custom template | don't include it in your project! -->
+     
+      <!-- End Custom template -->
+    </div>
+    <!--   Core JS Files   -->
+    <script src="assets/js/core/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/core/popper.min.js"></script>
+    <script src="assets/js/core/bootstrap.min.js"></script>
+
+    <!-- jQuery Scrollbar -->
+    <script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+
+    <!-- Chart JS -->
+    <script src="assets/js/plugin/chart.js/chart.min.js"></script>
+
+    <!-- jQuery Sparkline -->
+    <script src="assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+
+    <!-- Chart Circle -->
+    <script src="assets/js/plugin/chart-circle/circles.min.js"></script>
+
+    <!-- Datatables -->
+    <script src="assets/js/plugin/datatables/datatables.min.js"></script>
+
+    <!-- Bootstrap Notify -->
+    <script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+
+    <!-- jQuery Vector Maps -->
+    <script src="assets/js/plugin/jsvectormap/jsvectormap.min.js"></script>
+    <script src="assets/js/plugin/jsvectormap/world.js"></script>
+
+    <!-- Sweet Alert -->
+    <script src="assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+
+    <!-- Kaiadmin JS -->
+    <script src="assets/js/kaiadmin.min.js"></script>
+
+     <!--Cargando Datos-->
+     <script src="assets/js/datos.js"></script>
+
+   
+    <script>
+      $("#lineChart").sparkline([102, 109, 120, 99, 110, 105, 115], {
+        type: "line",
+        height: "70",
+        width: "100%",
+        lineWidth: "2",
+        lineColor: "#177dff",
+        fillColor: "rgba(23, 125, 255, 0.14)",
+      });
+
+      $("#lineChart2").sparkline([99, 125, 122, 105, 110, 124, 115], {
+        type: "line",
+        height: "70",
+        width: "100%",
+        lineWidth: "2",
+        lineColor: "#f3545d",
+        fillColor: "rgba(243, 84, 93, .14)",
+      });
+
+      $("#lineChart3").sparkline([105, 103, 123, 100, 95, 105, 115], {
+        type: "line",
+        height: "70",
+        width: "100%",
+        lineWidth: "2",
+        lineColor: "#ffa534",
+        fillColor: "rgba(255, 165, 52, .14)",
+      });
+    </script>
+    <script src="assets/js/main_uno.js"> </script>
+  </body>
+</html>
