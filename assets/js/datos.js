@@ -1,4 +1,7 @@
-const nombres = ["Parzibyte", "Terry", "Byleth", "Leon", "Shovel Knight"];
+const nombres = ["Luis Rodolfo", "Korina Velazquez", "Amizaday Hernández", "Erick Carballo", "Carla Garzón",
+                "Edgar Antonio","Liliana Aguirre","Juan Luis Díaz De León","Francisco Daniel","Rosa Itzel",
+                "Laura Martínez","Jeimy Lorena","Miriam Amaro","Ana Itzel","Stephanie Zamudio"
+                ];
 
 const $select = document.querySelector("#miSelect");
 
@@ -24,13 +27,21 @@ for (const cat of Nombres) {
     $selecciona.appendChild(opciones);
 }
 
-const Equipos = ["ANGELINOS", "Aqua", "CALMANA", "Caminemos al mañana",
-     "Chalmander Knight"," Cona_Aztahuacan","Conectores AAAP",
-    "Cross Out","Designers Programmers Apatlaco (DPA)",
-"Double D","EDC ELOTES, DORITOS Y CHILAQUILES","EcoByte",
-    "Frankis","Gabys Keto Cook","Happeat",
-    "JAO RoboGenius","Jugando y Aprendiendo","Ku náajaltik del Bosque!!!",
-    "LOS DUQ'S","Las 4 fantásticas","Los Debuggers"];
+const Equipos = ["ANGELINOS", "Aqua","Azcatl", "CALMANA", "Caminemos al mañana",
+                "Chalmander","Cona_Aztahuacan","Conectores AAAP",
+                "Cross Out","Cultiva City MX","Designers Programmers Apatlaco (DPA)",
+                "DIABLEROS","Digital Technology in Xaltipac pillar","Double D","EcoByte",
+                "EDC ELOTES, DORITOS Y CHILAQUILES","EGOA",
+                "Frankis","Gabys Keto Cook","Happeat","Isaac Asimov",
+                "JAO RoboGenius","Jugando y Aprendiendo","KAWI Crew","Ku náajaltik del Bosque!!!",
+                "Las 4 fantásticas","Los Debuggers","LOS DUQ'S","Los Robles de Aragón!!!",
+                "M1App","Mártires del código","Milpa Reales","MILPAROBOTICS",
+                "NOGAL_1","Ñokama","PillPal","PIPITAS_1","Posacmetl","Psycode",
+                "pureHeart","Pythoneros de Iztacalco","Robitech",
+                "ROSMARINUS","Sabor Digital","sfghhg",
+                "Skynet","SMA-Agrourbano","Tierra Blanca","TIKAL(´s)",
+                "Titanes de la tecnología","Ultrasónics","Urbanistas de Contreras",
+                "Xochiquetzal"];
 
 const $team = document.querySelector("#equipo");
 
