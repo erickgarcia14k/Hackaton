@@ -47,7 +47,7 @@
         <div class="sidebar-logo">
           <!-- Logo Header -->
           <div class="logo-header" data-background-color="dark">
-            <a href="../index.html" class="logo">
+            <a href="#" class="logo">
               <img
                 src="assets/img/hackaton.jpg"
                 alt="navbar brand"
@@ -174,15 +174,15 @@
                 <form id="my-google-sheet">
                    <!--Nombre-->
                    <label for="nombre_juez" >Nombre del Juez</label>
-                   <select id="miSelect" name="nombre_juez">                 
+                   <select id="miSelect" name="nombre_juez" class="form-select-sm">                                
                    </select>
                
                    <label for="categoria">Categoría</label>
-                   <select id="categoria" name="categoria">                 
+                   <select id="categoria" name="categoria" class="form-select-sm">                 
                    </select>
                
                    <label for="equipo">Equipo</label>
-                   <select id="equipo" name="equipo"></select>
+                   <select id="equipo" name="equipo" class="form-select-sm" ></select>
               </div>
             </div>
 
@@ -336,7 +336,7 @@
                     </table>  
                   </form>
                   <div class="form-group mb-5 text-center mt-5">
-                    <button onclick="SendFormGoogleSheets()" class="btn btn-danger btn-lg">Enviar Calificación</button>
+                    <button onclick="SendFormGoogleSheets()" class="btn btn-danger btn-lg" id="Enviar">Enviar Calificación</button>
                   </div>                  
 
                   <!--fin experimento-->
