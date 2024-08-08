@@ -75,7 +75,7 @@ for (const punto of $puntos) {
 $("#Enviar").click(function(){
     //remover todas las opciones excepto la primera
      
-    $("#miSelect").find('option').not(':first').remove();
+    $("#miSelect").val($("#frutas option:first").val());
     //establecer seleccionado la primera opcion
       $("#categoria").val($("#frutas option:first").val());
     $("#equipo").val($("#frutas option:first").val());
