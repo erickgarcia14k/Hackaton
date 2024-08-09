@@ -27,20 +27,20 @@ for (const cat of Nombres) {
     $selecciona.appendChild(opciones);
 }
 
-const Equipos = ["ANGELINOS", "Aqua","Azcatl", "CALMANA", "Caminemos al mañana",
-                "Chalmander","Cona_Aztahuacan","Conectores AAAP",
-                "Cross Out","Cultiva City MX","Designers Programmers Apatlaco (DPA)",
+const Equipos = ["ANGELINOS", "Aqua","Axolotl","Azcatl", "CALMANA", "Caminemos al mañana",
+                "Chalmander","Cona_Aztahuacan","Con amor","Conectores AAAP",
+                "Cross Out","Cultiva City MX","CULTIVA POWER","Designers Programmers Apatlaco (DPA)",
                 "DIABLEROS","Digital Technology in Xaltipac pillar","Double D","EcoByte",
-                "EDC ELOTES, DORITOS Y CHILAQUILES","EGOA",
+                "EDC ELOTES, DORITOS Y CHILAQUILES","EGOA","ESPERANZA FUGAZ","FECE","FECE2",
                 "Frankis","Gabys Keto Cook","Happeat","Isaac Asimov",
                 "JAO RoboGenius","Jugando y Aprendiendo","KAWI Crew","Ku náajaltik del Bosque!!!",
-                "Las 4 fantásticas","Los Debuggers","LOS DUQ'S","Los Robles de Aragón!!!",
-                "M1App","Mártires del código","Milpa Reales","MILPAROBOTICS",
-                "NOGAL_1","Ñokama","PillPal","PIPITAS_1","Posacmetl","Psycode",
+                "Las 4 fantásticas","Los Debuggers","LOS DUQ'S","Los pilotos","Los Robles de Aragón!!!",
+                "M1App","Mártires del código","Milpa Reales","MILPAROBOTICS","MOVILIDAD INTELIGENTE",
+                "NOGAL_1","Ñokama","PillPal","PIPITAS_1","Posacmetl","proyecto oriente","Psycode",
                 "pureHeart","Pythoneros de Iztacalco","Robitech",
                 "ROSMARINUS","Sabor Digital","sfghhg",
-                "Skynet","SMA-Agrourbano","Tierra Blanca","TIKAL(´s)",
-                "Titanes de la tecnología","Ultrasónics","Urbanistas de Contreras",
+                "Skynet","SMA-Agrourbano","TEC-IN","Tierra Blanca","TIKAL(´s)",
+                "Titanes de la tecnología","TLALLI-TECH","Ultrasónics","Urbanistas de Contreras",
                 "Xochiquetzal"];
 
 const $team = document.querySelector("#equipo");
