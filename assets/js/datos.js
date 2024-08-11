@@ -27,12 +27,12 @@ for (const cat of Nombres) {
     $selecciona.appendChild(opciones);
 }
 
-const Equipos = ["ANGELINOS", "Aqua","Axolotl","Azcatl", "CALMANA", "Caminemos al mañana",
+const Equipos = ["ANGELINOS", "Aqua","Axolotl","Aire Quetzal","Azcatl", "CALMANA", "Caminemos al mañana",
                 "Chalmander","Cona_Aztahuacan","Con amor","Conectores AAAP",
-                "Cross Out","Cultiva City MX","CULTIVA POWER","Designers Programmers Apatlaco (DPA)",
+                "Cross Out","Cultiva City MX","comuna chiltepin","CONECTORES AAP","CULTIVA POWER","Designers Programmers Apatlaco (DPA)",
                 "DIABLEROS","Digital Technology in Xaltipac pillar","Double D","EcoByte",
                 "EDC ELOTES, DORITOS Y CHILAQUILES","EGOA","ESPERANZA FUGAZ","FECE","FECE2",
-                "Frankis","Gabys Keto Cook","Happeat","Isaac Asimov",
+                "Frankis","Gabys Keto Cook","Happeat","Isaac Asimov","integradores tecnologicos","IVAGEEVAR",
                 "JAO RoboGenius","Jugando y Aprendiendo","KAWI Crew","Ku náajaltik del Bosque!!!",
                 "Las 4 fantásticas","Los Debuggers","LOS DUQ'S","Los pilotos","Los Robles de Aragón!!!",
                 "M1App","Mártires del código","Milpa Reales","MILPAROBOTICS","MOVILIDAD INTELIGENTE",
@@ -40,7 +40,7 @@ const Equipos = ["ANGELINOS", "Aqua","Axolotl","Azcatl", "CALMANA", "Caminemos a
                 "pureHeart","Pythoneros de Iztacalco","Robitech",
                 "ROSMARINUS","Sabor Digital","sfghhg",
                 "Skynet","SMA-Agrourbano","TEC-IN","Tierra Blanca","TIKAL(´s)",
-                "Titanes de la tecnología","TLALLI-TECH","Ultrasónics","Urbanistas de Contreras",
+                "Titanes de la tecnología","TLALLI-TECH","Ultrasónics","Urbanistas de Contreras","Tren de historias",,"Vegetales Verdes","VitalCode",
                 "Xochiquetzal"];
 
 const $team = document.querySelector("#equipo");
