@@ -1,5 +1,5 @@
 const nombres = ["Luis Rodolfo", "Korina Velazquez", "Amizaday Hernández","Carla Garzón",
-                "Edgar Antonio","Liliana Aguirre","Juan Luis Díaz De León","Francisco Daniel","Rosa Itzel",
+                "Edgar Antonio","Ramon Espejo","Lesly Zerna","Francisco Daniel","Mario Ochoa",
                 "Laura Martínez","Jesus Pacheco","Miriam Amaro","Ana Itzel","Stephanie Zamudio","Pamela Ivonne","jorge Hernandez"
                 ];
 
