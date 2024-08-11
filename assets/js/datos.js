@@ -1,6 +1,6 @@
 const nombres = ["Luis Rodolfo", "Korina Velazquez", "Amizaday Hernández","Carla Garzón",
                 "Edgar Antonio","Liliana Aguirre","Juan Luis Díaz De León","Francisco Daniel","Rosa Itzel",
-                "Laura Martínez","Jeimy Lorena","Miriam Amaro","Ana Itzel","Stephanie Zamudio","Pamela Ivonne","jorge Hernandez"
+                "Laura Martínez","Jesus Pacheco","Miriam Amaro","Ana Itzel","Stephanie Zamudio","Pamela Ivonne","jorge Hernandez"
                 ];
 
 const $select = document.querySelector("#miSelect");
